@@ -3,9 +3,6 @@
 # Hey there! :wave::smiley:
 
 <!--Introduction -->
-
-<img width="50" height="50" align="center"
-         src="https://avatars.githubusercontent.com/u/36204888?&v=4" style="margin:5px;text-align: justify;" />
 <p style="margin:5px;text-align: justify;">
 I'm Ananay Nag! I'm a  **Full Stack Developer** / **MERN Stack Developer** , looking to solve **real-world problems**:earth_asia:. I'm passionate about making **open-source** more accessible, creating software:computer: and tools to help people, and **building a community**. Do :star2: my repository if you find my project interesting, at least your star could make someone's day:pray:.</p>
 <br>
