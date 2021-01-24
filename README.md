@@ -4,7 +4,7 @@
 
 <!--Introduction -->
 <p style="margin:5px;text-align: justify;">
-I'm Ananay Nag! I'm a  **Full Stack Developer** / **MERN Stack Developer** , looking to solve **real-world problems**:earth_asia:. I'm passionate about making **open-source** more accessible, creating software:computer: and tools to help people, and **building a community**. Do :star2: my repository if you find my project interesting, at least your star could make someone's day:pray:.</p>
+  I'm Ananay Nag! I'm a <strong>Full Stack Developer / MERN Stack Developer</strong> , looking to solve <strong>real-world problems</strong>:earth_asia:. I'm passionate about making <strong>open-source</strong> more accessible, creating software:computer: and tools to help people, and <strong>building a community</strong>. Do :star2: my repository if you find my project interesting, at least your star could make someone's day:pray:.</p>
 <br>
 
 <!-- Your badges -->
