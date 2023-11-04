@@ -20,7 +20,7 @@
 ### 💼 Things that I'm currently working on:
 
 - Learning New Technologies :computer:
-- Learning and sesigning AWS and multi-cloud-based applications.
+- Learning and designing AWS and multi-cloud-based applications.
 - Working on a middleware drive app that shows all files, stored in S3 and mongoDB
 - Learning some CI integration with Travis-ci.
 
@@ -33,10 +33,10 @@
          src="https://github-readme-stats.vercel.app/api?username=ananay-nag&show_icons=true&theme=algolia&count_private=true&include_all_commits=true" style="margin:10px"/>
     <img width="45%" height="300" align="right" alt="Ananay Nag's github stats" 
          src="https://github-readme-stats.vercel.app/api/top-langs/?username=ananay-nag&theme=radical&title_color=8E2DE2&text_color=fff" style="margin:10px"/>
-   <!-- <img width="30%" height="auto" align="right" alt="Joykishan's github stats" 
+   <!-- <img width="30%" height="auto" align="right" alt="Joykishan's GitHub stats" 
          src="https://github-readme-stats.vercel.app/api/top-langs/?username=joykishansharma&layout=compact" />
          
-NOTE: Top languages does not indicate my skill level or something like that, it's a github metric of which languages i have the most code on github. -->
+NOTE: Top languages do not indicate my skill level or something like that, it's a GitHub metric of which languages I have the most code on GitHub. -->
   </a>
 </div>
 
