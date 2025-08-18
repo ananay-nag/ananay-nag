@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import {} from "./images/github-new.webp"
 import {
   Database,
   Server,
@@ -213,7 +214,7 @@ function App() {
       ],
       link: "https://universal-client-doc.vercel.app/",
       type: "NPM",
-      imageSrc: "/src/images/univercel-new.png",
+      imageSrc: "/images/univercel-new.png",
     },
     {
       title: "go-set-mod",
@@ -222,7 +223,7 @@ function App() {
       tech: ["Golang", "Linux", "Shell Script"],
       link: "https://go-set-mod.vercel.app/",
       type: "GITHUB",
-      imageSrc: "/src/images/go-set-mod-1.png",
+      imageSrc: "/images/go-set-mod-1.png",
     },
     {
       title: "react-voice-recorder",
@@ -232,7 +233,7 @@ function App() {
       tech: ["ReactJS", "TypeScript", "NodeJS"],
       link: "",
       type: "NPM",
-      imageSrc: "/src/images/github-new.webp"
+      imageSrc: "/images/github-new.webp"
     },
     {
       title: "react-voice-demo-app",
@@ -241,7 +242,7 @@ function App() {
       tech: ["ReactJS", "TypeScript", "NodeJS"],
       link: "https://react-voice-demo-app.vercel.app",
       type: "GITHUB",
-      imageSrc: "/src/images/github-new.webp",
+      imageSrc: "/images/github-new.webp",
     },
 
     {
@@ -256,7 +257,7 @@ function App() {
       ],
       link: "",
       type: "EXTENSION",
-      imageSrc: "/src/images/github-new.webp",
+      imageSrc: "/images/github-new.webp",
     },
   ];
 
