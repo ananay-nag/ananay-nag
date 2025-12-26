@@ -25,7 +25,7 @@
 ![](https://github-readme-stats.vercel.app/api?username=ananay-nag&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
 ![](https://nirzak-streak-stats.vercel.app/?user=ananay-nag&theme=dark&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=ananay-nag&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
-![Vaunt Badge](https://api.vaunt.dev/v1/github/entities/ananay-nag/contributions?format=svg&private=true)  
+
 ![GitHub metrics](https://metrics.lecoq.io/ananay-nag)  
 ---
 [![](https://visitcount.itsvg.in/api?id=ananay-nag&icon=0&color=0)](https://visitcount.itsvg.in)
