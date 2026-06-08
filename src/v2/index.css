@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 1. Global Reset & Variables */
+:root {
+  --background: #030712; /* Deep space background */
+  --foreground: #f8fafc;
+  --accent-blue: #3b82f6;
+  --accent-emerald: #10b981;
+  --glass-bg: rgba(15, 23, 42, 0.4);
+  --glass-border: rgba(255, 255, 255, 0.08);
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', -apple-system, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* 2. 3D Canvas Optimization */
+/* Ensures the canvas stays fixed in the background while content scrolls */
+canvas {
+  touch-action: none;
+  pointer-events: auto !important;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* 3. Custom Scrollbar for Engineering Aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 10px;
+  border: 2px solid var(--background);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-blue);
+}
+
+/* 4. Component-Level Utilities */
+@layer components {
+  /* Premium Glassmorphism for Experience Cards [cite: 9, 14, 19] */
+  .glass-card {
+    /* Avoid @apply with opacity modifiers if it causes build errors */
+    background-color: rgba(2, 6, 23, 0.4); 
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .glass-card:hover {
+    border-color: rgba(59, 130, 246, 0.3);
+    background-color: rgba(15, 23, 42, 0.5);
+    transform: translateY(-4px);
+  }
+
+  /* Animated Navigation Underline */
+  .nav-link {
+    @apply relative text-slate-400 hover:text-white transition-colors duration-200;
+  }
+
+  .nav-link::after {
+    @apply content-[''] absolute bottom-[-4px] left-0 w-0 h-[1px] bg-blue-500 transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  /* High-Scale Metric Highlights [cite: 11, 22, 28] */
+  .metric-glow {
+    text-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+  }
+
+  /* Status Badge for Live Projects [cite: 41-45] */
+  .status-badge {
+    @apply flex items-center gap-2 px-3 py-1 rounded-full text-[10px] font-mono tracking-widest uppercase;
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    color: var(--accent-blue);
+  }
+}
+
+/* 5. Custom Animations for Data Nodes */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* 6. Mobile Responsiveness Fixes */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3.5rem;
+    line-height: 1;
+  }
+}

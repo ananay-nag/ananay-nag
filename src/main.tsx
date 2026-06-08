@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 
 // 1. Get the version parameter from the current URL (e.g., http://localhost:5173/?version=2)
 const urlParams = new URLSearchParams(window.location.search);
-const VERSION = urlParams.get('v') || '1'; // Default to '1' if parameter is missing
+const VERSION = urlParams.get('v') || '2'; // Default to '1' if parameter is missing
 const LSV = parseInt(VERSION) - 1 || 1
 const DEFAULT = 1
 // 2. Tell Vite to map out all possible App components in your version folders
