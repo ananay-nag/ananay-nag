@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import {} from "./images/github-new.webp"
 import {
   Database,
   Server,
@@ -31,6 +30,7 @@ import {
 
 import { motion } from "framer-motion";
 import ExperienceTimeline from "./Experience";
+import "./index.css"
 
 const SkillLevel = {
   BEGINNER: { color: "bg-blue-500/20 text-blue-400", label: "Beginner" },
@@ -197,10 +197,12 @@ function App() {
     { name: "Contact", href: "#contact", icon: Mail },
   ];
 
+  const imageSrcBase = `/images/v1`;
+
   const OpenProjects = [
     {
       title: "universal-client",
-      desc: "A TypeScript‑first, plugin‑driven library for seamless, configuration‑driven communication with multi-protocol services — optimized for modern service architectures and high‑performance apps.",
+      desc: "A TypeScript‑first, plugin-driven library for seamless, configuration-driven communication with multi-protocol services — optimized for modern service architectures and high‑performance apps.",
       github: "https://github.com/ananay-nag/universal-client",
       npm: "https://www.npmjs.com/package/@ananay-nag/universal-client",
       tech: [
@@ -214,7 +216,7 @@ function App() {
       ],
       link: "https://universal-client-doc.vercel.app/",
       type: "NPM",
-      imageSrc: "/images/univercel-new.png",
+      imageSrc: `${imageSrcBase}/univercel-new.png`,
     },
     {
       title: "go-set-mod",
@@ -223,7 +225,7 @@ function App() {
       tech: ["Golang", "Linux", "Shell Script"],
       link: "https://go-set-mod.vercel.app/",
       type: "GITHUB",
-      imageSrc: "/images/go-set-mod-1.png",
+      imageSrc: `${imageSrcBase}/go-set-mod-1.png`,
     },
     {
       title: "react-voice-recorder",
@@ -233,7 +235,7 @@ function App() {
       tech: ["ReactJS", "TypeScript", "NodeJS"],
       link: "",
       type: "NPM",
-      imageSrc: "/images/github-new.webp"
+      imageSrc: `${imageSrcBase}/github-new.webp`
     },
     {
       title: "react-voice-demo-app",
@@ -242,7 +244,7 @@ function App() {
       tech: ["ReactJS", "TypeScript", "NodeJS"],
       link: "https://react-voice-demo-app.vercel.app",
       type: "GITHUB",
-      imageSrc: "/images/github-new.webp",
+      imageSrc: `${imageSrcBase}/github-new.webp`,
     },
 
     {
@@ -257,12 +259,12 @@ function App() {
       ],
       link: "",
       type: "EXTENSION",
-      imageSrc: "/images/github-new.webp",
+      imageSrc: `${imageSrcBase}/github-new.webp`
     },
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-950 via-black to-gray-900 text-white">
+    <div className="min-h-screen bg-linear-to-b from-gray-950 via-black to-gray-900 text-white">
       {/* Navigation */}
       <nav className="fixed top-0 right-0 z-50 p-4">
         <button
@@ -360,7 +362,7 @@ function App() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="text-3xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500"
+                    className="text-3xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-linear-to-r from-green-400 to-blue-500"
                   >
                     ANANYA NAG
                   </motion.h1>
@@ -371,7 +373,7 @@ function App() {
                       Sr. Software Engineer
                     </strong>
                   </h2>
-                  <h2 className="text-xl md:text-2xl font-semibold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-500">
+                  <h2 className="text-xl md:text-2xl font-semibold mb-6 text-transparent bg-clip-text bg-linear-to-r from-red-400 to-orange-500">
                     Open To Work (Let's talk new Opportunity)
                   </h2>
                   <div className="text-gray-300 mb-8 text-lg leading-relaxed">
@@ -417,10 +419,10 @@ function App() {
       {/* Technical Skills Section */}
       <section className="py-20 relative overflow-hidden" id="skills">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-16 text-center bg-gradient-to-r from-green-400 to-blue-500 text-transparent bg-clip-text">
+          <h2 className="text-4xl font-bold mb-16 text-center bg-linear-to-r from-green-400 to-blue-500 text-transparent bg-clip-text">
             Technical Skills
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-8 mb-16">
             {[
               {
                 title: "Programming",
@@ -543,7 +545,7 @@ function App() {
       {/* Projects Section */}
       <section className="py-20" id="projects">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-16 text-center bg-gradient-to-r from-green-400 to-blue-500 text-transparent bg-clip-text">
+          <h2 className="text-4xl font-bold mb-16 text-center bg-linear-to-r from-green-400 to-blue-500 text-transparent bg-clip-text">
             Featured Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -665,7 +667,7 @@ function App() {
       {/* Open Source Section */}
       <section className="py-20 bg-gray-900/50" id="opensource">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-16 text-center bg-gradient-to-r from-green-400 to-blue-500 text-transparent bg-clip-text">
+          <h2 className="text-4xl font-bold mb-16 text-center bg-linear-to-r from-green-400 to-blue-500 text-transparent bg-clip-text">
             Open Source Contributions
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
@@ -746,7 +748,7 @@ function App() {
       {/* Contact Section */}
       <section className="py-20" id="contact">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-16 text-center bg-gradient-to-r from-green-400 to-blue-500 text-transparent bg-clip-text">
+          <h2 className="text-4xl font-bold mb-16 text-center bg-linear-to-r from-green-400 to-blue-500 text-transparent bg-clip-text">
             Connect
           </h2>
           <div className="max-w-3xl mx-auto">

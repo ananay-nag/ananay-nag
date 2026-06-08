@@ -3,16 +3,16 @@ import { motion } from "framer-motion";
 
 const ExperienceTimeline = ({ experiences }: Record<string, any>) => {
   return (
-    <section className="py-20 bg-gray-900/60" id="experience">
+    <section className="py-35 bg-gray-900/60" id="experience">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold mb-16 text-center bg-gradient-to-r from-green-400 to-blue-500 text-transparent bg-clip-text">
+        <h2 className="text-4xl font-bold mb-16 text-center bg-linear-to-r from-green-400 to-blue-500 text-transparent bg-clip-text">
           Professional Experience
         </h2>
 
         {/* ---------- DESKTOP / TABLET VIEW (>= md:768px) ---------- */}
         <div className="hidden md:block relative max-w-10xl mx-auto">
           {/* Center line */}
-          <div className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-1 bg-gradient-to-b from-green-400 to-blue-500"></div>
+          <div className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-1 bg-linear-to-b from-green-400 to-blue-500"></div>
 
           {experiences.map((exp: any, index: number) => {
             const isEven = index % 2 === 0; // even = right, odd = left
